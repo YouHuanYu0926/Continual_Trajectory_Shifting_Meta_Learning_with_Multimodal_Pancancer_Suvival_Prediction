@@ -1,6 +1,7 @@
 import os
 import torch
 from torch.optim import Adam
+#for pretrain please use SGD as optimizer
 from model.loss import Loss
 from model.model_coach import ModelCoach
 from model.net import Net
