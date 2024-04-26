@@ -91,4 +91,5 @@ class Model(_BaseModelWithDataLoader):
 
     def get_opt(self, lr):
         optimizer = self.optimizer(self.model.parameters(), lr=lr, weight_decay=5e-4)
+        #optimizer = self.optimizer(self.model.parameters(), lr=lr, momentum=0.9, weight_decay=5e-4, nesterov=False)
         return optimizer
