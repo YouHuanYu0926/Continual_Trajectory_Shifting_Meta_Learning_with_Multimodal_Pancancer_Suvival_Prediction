@@ -17,7 +17,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 FLAGS = flags.FLAGS
 # Training
 flags.DEFINE_integer("batch_size", 128, "Batch size")
-flags.DEFINE_integer("train_steps", 100000, "Total training steps for a single run")
+flags.DEFINE_integer("train_steps", 50000, "Total training steps for a single run")
 flags.DEFINE_enum("opt", "sgd", ["adam", "sgd", "rmsprop"], "optimizer")
 flags.DEFINE_float("lr", 1e-2, "Learning rate")
 flags.DEFINE_float("meta_lr", 1e-2, "Meta learning rate")
